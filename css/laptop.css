@@ -31,7 +31,7 @@ body {
       rgba(34, 34, 34, 0.4),
       rgba(34, 34, 34, 0.4)
     ),
-    url(/images/banner.jpg);
+    url(images/banner.jpg);
 }
 
 .banner {
