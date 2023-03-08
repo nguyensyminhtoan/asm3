@@ -1,0 +1,94 @@
+.container {
+  display: grid;
+  grid-template-columns: 49.5% 24.5% 24.5%;
+  grid-template-rows: 60% 40%;
+  max-width: 1170px;
+  justify-self: center;
+  align-self: center;
+  font-size: 12px;
+  gap: 10px;
+  padding: 15px;
+
+  background-color: #0b1ae9;
+}
+.timeline-content,
+.team-content,
+.goal-content,
+.scopes-content {
+  border-top: 1px solid #b4b4b4;
+}
+
+.primary-content-item,
+.goal-content-item,
+.team-content-item {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #b4b4b448;
+}
+.timeline-content-item {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px dotted #0be9de;
+}
+.icon {
+  padding: 0 20px;
+  font-size: 20px;
+}
+.icon-number {
+  border: 1px solid #b1b6ba;
+  border-radius: 50%;
+  padding: 15px 15px;
+  margin: 0 15px;
+  background-color: #9e88ff;
+  color: #fff;
+}
+h2 {
+  color: blue;
+}
+.scopes-content {
+  display: flex;
+}
+.scopes-content-item:nth-child(2) {
+  margin-left: 12px;
+}
+.team {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  padding-bottom: 60px;
+}
+.timeline {
+  grid-column: 3/4;
+  grid-row: 1/3;
+  padding-right: -15px;
+}
+.goals,
+.team,
+.timeline,
+.primary,
+.scopes {
+  background-color: #fff;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (max-width: 768px) {
+  .primary-content-item,
+  .goal-content-item,
+  .team-content-item,
+  .timeline-content-item,
+  .container {
+    display: block;
+  }
+  .icon-number {
+    display: inline-block;
+    margin: 15px 0 0px 0;
+  }
+  .icon {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (max-width: 420px) {
+  .scopes-content {
+    display: block;
+  }
+}
